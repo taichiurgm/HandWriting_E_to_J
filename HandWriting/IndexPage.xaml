@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="HandWriting.IndexPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HandWriting"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBlock x:Name="Direction" Height="50" Foreground="Navy" FontSize="22" Text="Select a problem to start. " Margin="20,50,20,0" VerticalAlignment="Top" TextAlignment="Center"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Background="White">
+            <ComboBox x:Name="LevelBox" Margin="10,0,10,20" FontSize="22" BorderBrush="Navy" BorderThickness="3" Foreground="Navy" Height="50" Width="100" SelectionChanged="SelectQuestion"/>
+            <ListView x:Name="QuestionsBox" Margin="10,0,10,20" FontSize="22" BorderBrush="Navy" BorderThickness="3" Foreground="Navy" Height="500" Width="300" SelectionChanged="Start"/>
+        </StackPanel>
+    </Grid>
+</Page>
